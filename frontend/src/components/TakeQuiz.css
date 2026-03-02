@@ -1,0 +1,100 @@
+/* ── Take Quiz component ───────────────────────────────────────────────────── */
+
+.tq__heading {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.tq__meta {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.tq__loading {
+  text-align: center;
+  color: var(--text-secondary);
+  margin-top: 4rem;
+  font-size: 1.1rem;
+}
+
+.tq__form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.tq__question-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tq__question-card {
+  background-color: #f9fafb;
+  border: 1px solid var(--border);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+}
+
+.tq__question-text {
+  margin: 0 0 0.75rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.tq__options-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tq__option-btn {
+  text-align: left;
+  padding: 0.6rem 0.85rem;
+  border: 1.5px solid #d1d5db;
+  border-radius: 6px;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #374151;
+  font-family: inherit;
+  transition: border-color 0.15s, background-color 0.15s;
+}
+
+.tq__option-btn:hover:not(:disabled) {
+  border-color: #a5b4fc;
+  background-color: #f5f3ff;
+}
+
+.tq__option-btn:disabled {
+  cursor: default;
+}
+
+.tq__option-btn--selected {
+  border-color: var(--color-primary);
+  background-color: #eef2ff;
+  font-weight: 600;
+  color: #3730a3;
+}
+
+.tq__option-btn--correct {
+  border-color: #16a34a;
+  background-color: #f0fdf4;
+  font-weight: 600;
+  color: #166534;
+}
+
+.tq__option-btn--wrong {
+  border-color: #dc2626;
+  background-color: #fef2f2;
+  font-weight: 600;
+  color: #991b1b;
+}
